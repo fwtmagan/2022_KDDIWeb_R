@@ -2,3 +2,20 @@
     padding: 0;
     margin: 0;
 }
+
+/* View More Button*/
+#viewmore {
+    background-color: #DA6555;
+    color: white;
+}
+
+#viewmore:after {
+    content: url(../img/icon/share.svg);
+    width: auto;
+    height: auto;
+    /* position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-45%);
+    right: -22px; */
+}
