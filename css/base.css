@@ -1,15 +1,33 @@
+/* All Pages */
 * {
     padding: 0;
     margin: 0;
 }
 
-/* View More Button*/
-#viewmore {
+/* KDDIWeb View More Button */
+#viewmore_1 {
     background-color: #DA6555;
     color: white;
 }
 
-#viewmore:after {
+#viewmore_1:after {
+    content: url(../img/icon/share.svg);
+    width: auto;
+    height: auto;
+    /* position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-45%);
+    right: -22px; */
+}
+
+/* Services View More Button */
+#viewmore_2 {
+    background-color: #0E0D6A;
+    color: white;
+}
+
+#viewmore_2:after {
     content: url(../img/icon/share.svg);
     width: auto;
     height: auto;
