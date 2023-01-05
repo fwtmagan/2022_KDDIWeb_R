@@ -37,3 +37,34 @@
     transform: translateY(-45%);
     right: -22px; */
 }
+
+#KDDIWeb:before {
+    content: "KDDIウェブコミュニケーションズ";
+    color: #0E0D6A;
+    font-weight: bold;
+    font-size: 1.5em;
+    }
+
+.o_circle {
+    border: 2px solid;
+    border-color: #DA6555;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.o_circle_text {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    color: #DA6555;
+}
+
+#operation:before {
+    content: "オペレーションエリア";
+    color: #0E0D6A;
+    font-weight: bold;
+    font-size: 1.5em;
+    }
