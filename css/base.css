@@ -1,9 +1,71 @@
 /* All Pages */
+/*------------------------------
+ ▼共通デザイン（モバイル向け）
+ -------------------------------*/
 * {
     padding: 0;
     margin: 0;
 }
 
+
+#logo_on_kv {
+    width: 10em;
+    position: absolute;
+    display: inline;
+    z-index: 20;
+    color: #fff;
+    text-shadow: 0px 0px 10px #444;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #DA6555;
+    color: #ffffff;
+    text-align: center;
+    height: 15em;
+}
+
+#logo_footer {
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 10em;
+}
+
+small {
+    font-family: Helvetica Neue;
+    font-size: 0.625em;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+/*-------------------------------------
+ ▼中型画面向けデザイン（タブレットなど）
+ --------------------------------------*/
+ @media screen and (min-width: 768px) {
+    
+}
+
+/*-------------------------------
+ ▼大型画面向けデザイン（PCなど）
+ --------------------------------*/
+ @media screen and (min-width: 1024px) {
+
+    #logo_footer {
+        width: 12em;
+    }
+
+    small {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+
+}
+
+/* TOP */
 /* KDDIWeb View More Button */
 #viewmore_1 {
     background-color: #DA6555;
@@ -43,8 +105,15 @@
     color: #0E0D6A;
     font-weight: bold;
     font-size: 1.5em;
-    }
+}
 
+/* TOP END*/
+
+/* WORKSTYLE*/
+/* WORKSTYLE END*/
+
+
+/* WORKSPACE */
 .o_circle {
     border: 2px solid;
     border-color: #DA6555;
@@ -67,4 +136,9 @@
     color: #0E0D6A;
     font-weight: bold;
     font-size: 1.5em;
-    }
+}
+/* WORKSPACE END*/
+
+/* Quiz */
+
+/* Quiz END*/
