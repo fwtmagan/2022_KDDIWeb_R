@@ -2,26 +2,64 @@
 /*------------------------------
  ▼共通デザイン（モバイル向け）
  -------------------------------*/
+
 * {
     padding: 0;
     margin: 0;
 }
 
+#logo_on_header {
+    width: 8em;
+    margin: 1em;
+}
+
+.home_button {
+    width: 5em;
+    height: auto;
+    position: absolute;
+    bottom: -116.5em;
+    right: 0em;
+}
+
+/*-------------------------------
+ ▼大型画面向けデザイン（PCなど）
+ --------------------------------*/
+@media screen and (min-width: 1024px) {
+    #logo_on_header {
+        width: 12em;
+        margin-top: 4em;
+        margin-bottom: 4em;
+        margin-left: 7.5em;
+    }
+
+    .home_button {
+        width: 8em;
+        height: auto;
+        bottom: 1.25em;
+        right: 1.25em;
+        z-index: 10000;
+    }
+
+}
+
+
+/* TOP */
+
 /* Keyvisual Video */
 video {
-    height: 50em;
+    height: 45em;
     width: auto;
     position: relative;
-    left: -52em;
+    left: -45em;
 }
 
 #phrase01 {
     font-size: 0.85em;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: #ffffff;
     text-shadow: 0 3px 3px #898989;
     position: absolute;
-    top: 20em;
+    top: 15em;
     left: 2em;
 }
 
@@ -30,14 +68,14 @@ video {
     font-family: 'Noto Sans JP', sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 47em;
+    top: 37em;
     left: 12em;
 }
 
 #logo_on_kv {
     width: 8em;
     position: absolute;
-    top: 21.5em;
+    top: 17.5em;
     left: 8em;
 }
 
@@ -79,37 +117,10 @@ video {
     width: 80%;
 }
 
-footer {
-    background-color: #DA6555;
-    color: #ffffff;
-    text-align: center;
-    width: auto;
-    height: 15em;
-}
-
-#logo_footer {
-    margin-top: 4em;
-    margin-bottom: 1em;
-    width: 10em;
-}
-
-small {
-    font-family: Helvetica Neue;
-    font-size: 0.625em;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-    word-break: break-all;
-}
-
 #back_to_top {
     height: 25em;
 }
 
-/*-------------------------------------
- ▼中型画面向けデザイン（タブレットなど）
- --------------------------------------*/
-@media screen and (min-width: 768px) {}
 
 /*-------------------------------
  ▼大型画面向けデザイン（PCなど）
@@ -119,28 +130,29 @@ small {
     /* Keyvisual Video */
 
     video {
-        max-width: 1024px
+        height: auto;
+        width: 100%;
+        left: 0em;
     }
 
     #phrase01 {
-        font-size: 0.85em;
-        /* position: absolute;
-        top: 20em;
-        left: 2em; */
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        top: 12em;
+        left: 15em;
     }
 
     #phrase02 {
-        font-size: 0.4em;
-        /* position: absolute;
-        top: 47em;
-        left: 12em; */
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+        top: 14em;
+        left: 32em;
     }
 
     #logo_on_kv {
-        width: 8em;
-        /* position: absolute;
-        top: 21.5em;
-        left: 8em; */
+        width: 13em;
+        top: 25em;
+        left: 48em;
     }
 
     /* Keyvisual Video END */
@@ -160,19 +172,9 @@ small {
         top: -2em;
     }
 
-    #logo_footer {
-        width: 12em;
-    }
-
-    small {
-        font-size: 1em;
-        text-align: center;
-    }
-
-
 }
 
-/* TOP */
+
 
 /* KDDIWeb View More Button */
 #viewmore_1 {
@@ -208,33 +210,151 @@ small {
 
 /* WORKSTYLE*/
 
+#ws_header {
+    width: 24.25em;
+    margin: 0 auto;
+}
+
+.workstyle {
+    margin-top: 1.5em;
+    margin-bottom: 2.55em;
+    background-color: #F2F0F0;
+    height: auto;
+    padding: 1.5em 0.5em;
+}
+
+#ws_title {
+    width: 20em;
+}
+
+#ws_words {
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+}
+
+.ws_description {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    margin-bottom: 2.55em;
+}
+
 #KDDIWeb:before {
     content: "KDDIウェブコミュニケーションズ";
     color: #0E0D6A;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
+
+.type_of_works {
+    background-color: #F2F0F0;
+    height: auto;
+    padding: 1.5em;
+    line-height: 2em;
+    margin-bottom: 5em;
+}
+
+.type_of_works > h2 {
+    font-size: 1em;
+    color: #0E0D6A;
+}
+
+.type_of_works > p {
+    font-size: 0.85em;
+}
+
+.search {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 4em;
+    margin-left: 1.5em;
+}
+
+.family > img {
+    width: 50%;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.family > p {
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+}
+
+.o_circle {
+    position: relative;
+    border: 2px solid;
+    border-color: #DA6555;
+    border-radius: 50%;
+    width: 7.5em;
+    height: 7.5em;
+    margin: 0 auto;
+}
+
+.o_circle_text {
+    position: relative;
+    bottom: -3.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #DA6555;
+}
+
+.o_circle_text_1 {
+    position: relative;
+    bottom: -3.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #DA6555;
+}
+
+.b_circle {
+    position: relative;
+    border: 2px solid;
+    border-color: #0E0D6A;
+    border-radius: 50%;
+    width: 7.5em;
+    height: 7.5em;
+    margin: 0 auto;
+}
+
+.b_circle_text {
+    position: relative;
+    bottom: -3.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #0E0D6A;
+}
+
+
+/*-------------------------------
+ ▼大型画面向けデザイン（PCなど）
+ --------------------------------*/
+@media screen and (min-width: 1024px) {}
 
 /* WORKSTYLE END*/
 
 
 /* WORKSPACE */
-.o_circle {
-    border: 2px solid;
-    border-color: #DA6555;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-}
-
-.o_circle_text {
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    font-size: 16px;
-    color: #DA6555;
-}
 
 #operation:before {
     content: "オペレーションエリア";
@@ -245,6 +365,52 @@ small {
 
 /* WORKSPACE END*/
 
+
 /* Quiz */
 
 /* Quiz END*/
+
+
+/* footer */
+
+footer {
+    position: relative;
+    background-color: #DA6555;
+    color: #ffffff;
+    text-align: center;
+    width: auto;
+    height: 15em;
+}
+
+#logo_footer {
+    margin-top: 4em;
+    margin-bottom: 1em;
+    width: 10em;
+}
+
+small {
+    font-family: Helvetica Neue;
+    font-size: 0.625em;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    word-break: break-all;
+}
+
+/*-------------------------------
+ ▼大型画面向けデザイン（PCなど）
+ --------------------------------*/
+@media screen and (min-width: 1024px) {
+
+    #logo_footer {
+        width: 12em;
+    }
+
+    small {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
+
+/* footer END*/
