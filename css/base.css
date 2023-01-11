@@ -17,7 +17,7 @@
     width: 5em;
     height: auto;
     position: absolute;
-    bottom: -116.5em;
+    bottom: 12em;
     right: 0em;
 }
 
@@ -25,17 +25,18 @@
  ▼大型画面向けデザイン（PCなど）
  --------------------------------*/
 @media screen and (min-width: 1024px) {
+
     #logo_on_header {
         width: 12em;
         margin-top: 4em;
         margin-bottom: 4em;
-        margin-left: 7.5em;
+        margin-left: 3em;
     }
 
     .home_button {
         width: 8em;
         height: auto;
-        bottom: 1.25em;
+        bottom: 10.5em;
         right: 1.25em;
         z-index: 10000;
     }
@@ -210,8 +211,8 @@ video {
 
 /* WORKSTYLE*/
 
-#ws_header {
-    width: 24.25em;
+.ws_header {
+    width: 24.375em;
     margin: 0 auto;
 }
 
@@ -219,7 +220,6 @@ video {
     margin-top: 1.5em;
     margin-bottom: 2.55em;
     background-color: #F2F0F0;
-    height: auto;
     padding: 1.5em 0.5em;
 }
 
@@ -254,33 +254,33 @@ video {
     height: auto;
     padding: 1.5em;
     line-height: 2em;
-    margin-bottom: 5em;
+    margin-bottom: 2.55em;
 }
 
-.type_of_works > h2 {
-    font-size: 1em;
+.type_of_works>h2 {
+    font-size: 1.2em;
     color: #0E0D6A;
 }
 
-.type_of_works > p {
+.type_of_works>p {
     font-size: 0.85em;
 }
 
 .search {
     font-size: 1.25em;
     font-weight: bold;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
     margin-left: 1.5em;
 }
 
-.family > img {
+.human>img {
     width: 50%;
-    display: block;
+    display: flex;
     justify-content: center;
     margin: 0 auto;
 }
 
-.family > p {
+.human>p {
     font-size: 1.25em;
     margin-top: 0.5em;
     margin-bottom: 1em;
@@ -290,6 +290,7 @@ video {
 .circles {
     display: flex;
     justify-content: center;
+    margin-bottom: 3em;
 }
 
 .o_circle {
@@ -299,7 +300,7 @@ video {
     border-radius: 50%;
     width: 7.5em;
     height: 7.5em;
-    margin: 0 auto;
+    margin: 0 1.2em;
 }
 
 .o_circle_text {
@@ -331,7 +332,7 @@ video {
     border-radius: 50%;
     width: 7.5em;
     height: 7.5em;
-    margin: 0 auto;
+    margin: 0 1.2em;
 }
 
 .b_circle_text {
@@ -345,11 +346,45 @@ video {
     color: #0E0D6A;
 }
 
+.details {
+    margin-bottom: 30em;
+    margin-left: 2.5em;
+    font-size: 0.25em;
+}
 
 /*-------------------------------
  ▼大型画面向けデザイン（PCなど）
  --------------------------------*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    .ws_header {
+        width: 72.5em;
+    }
+
+    .bar {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5em;
+        align-items: center;
+        /* height: 100%; */
+    }
+
+    /* .workstyle {
+        height: 15em;
+        display: block;
+        align-items: center;
+        height: 100%;
+    } */
+
+    #ws_title {
+        width: 30em;
+    }
+
+    #ws_words {
+        font-size: 1.25em;
+    }
+
+}
 
 /* WORKSTYLE END*/
 
