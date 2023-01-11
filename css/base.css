@@ -216,7 +216,7 @@ video {
     margin: 0 auto;
 }
 
-.workstyle {
+.work_s {
     margin-top: 1.5em;
     margin-bottom: 2.55em;
     background-color: #F2F0F0;
@@ -283,7 +283,7 @@ video {
 .human>p {
     font-size: 1.25em;
     margin-top: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 1.55em;
     text-align: center;
 }
 
@@ -366,7 +366,7 @@ video {
         justify-content: space-between;
         margin-bottom: 5em;
         align-items: center;
-        /* height: 100%; */
+        height: 100%;
     }
 
     /* .workstyle {
@@ -446,7 +446,6 @@ video {
         position: relative;
         border: 4px solid;
         border-color: #DA6555;
-        border-radius: 50%;
         width: 12em;
         height: 12em;
         margin-bottom: 2em;
@@ -459,8 +458,6 @@ video {
         display: flex;
         justify-content: center;
         font-size: 1.5em;
-        font-weight: bold;
-        color: #DA6555;
     }
 
     .o_circle_text_1 {
@@ -470,15 +467,12 @@ video {
         display: flex;
         justify-content: center;
         font-size: 1.5em;
-        font-weight: bold;
-        color: #DA6555;
     }
 
     .b_circle {
         position: relative;
         border: 4px solid;
         border-color: #0E0D6A;
-        border-radius: 50%;
         width: 12em;
         height: 12em;
         margin-bottom: 2em;
@@ -491,8 +485,6 @@ video {
         display: flex;
         justify-content: center;
         font-size: 1.5em;
-        font-weight: bold;
-        color: #0E0D6A;
     }
 
     .details {
@@ -507,12 +499,38 @@ video {
 
 /* WORKSPACE */
 
+#wp01 {
+    width: 15em;
+    height: auto;
+}
+
+#wp02 {
+    width: 15em;
+    height: auto;
+    border-radius: 50%;
+}
+
 #operation:before {
     content: "オペレーションエリア";
     color: #0E0D6A;
     font-weight: bold;
     font-size: 1.5em;
 }
+
+#relax:before {
+    content: "リラックスエリア";
+    color: #0E0D6A;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#flexible:before {
+    content: "フレキシブルエリア";
+    color: #0E0D6A;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 
 /* WORKSPACE END*/
 
