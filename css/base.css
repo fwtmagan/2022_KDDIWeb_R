@@ -28,9 +28,9 @@
 
     #logo_on_header {
         width: 12em;
-        margin-top: 4em;
-        margin-bottom: 4em;
-        margin-left: 3em;
+        margin-top: 2em;
+        margin-bottom: 2.5em;
+        margin-left: 2em;
     }
 
     .home_button {
@@ -212,7 +212,7 @@ video {
 /* WORKSTYLE*/
 
 .ws_header {
-    width: 24.375em;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -220,7 +220,7 @@ video {
     margin-top: 1.5em;
     margin-bottom: 2.55em;
     background-color: #F2F0F0;
-    padding: 1.5em 0.5em;
+    padding: 2em 0.5em;
 }
 
 #ws_title {
@@ -382,6 +382,122 @@ video {
 
     #ws_words {
         font-size: 1.25em;
+    }
+
+    .ws_description {
+        padding: 0;
+        font-size: 1.5em;
+        line-height: 2.25em;
+        margin-bottom: 2em;
+    }
+
+    /* #KDDIWeb:before {
+        font-size: 1.5em;
+    } */
+
+    .type_of_works {
+        padding: 2em;
+        line-height: 3em;
+        margin: 5em 0;
+    }
+
+    .type_of_works>h2 {
+        font-size: 1.5em;
+    }
+
+    .type_of_works>p {
+        font-size: 1.25em;
+    }
+
+    .search {
+        font-size: 1.8em;
+        margin-bottom: 6em;
+        margin-left: 1em;
+    }
+
+    .humans {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 5.5em;
+        align-items: center;
+        height: 100%;
+    }
+
+    .human {
+        margin-right: -15em;
+    }
+
+    .human>img {
+        width: 120%;
+    }
+
+    .human>p {
+        font-size: 2em;
+        margin-top: 1em;
+        margin-left: 2.25em;
+        letter-spacing: 0.05em;
+    }
+
+    .circles {
+        display: block;
+    }
+
+    .o_circle {
+        position: relative;
+        border: 4px solid;
+        border-color: #DA6555;
+        border-radius: 50%;
+        width: 12em;
+        height: 12em;
+        margin-bottom: 2em;
+    }
+
+    .o_circle_text {
+        position: relative;
+        bottom: -3.5em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #DA6555;
+    }
+
+    .o_circle_text_1 {
+        position: relative;
+        bottom: -2.8em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #DA6555;
+    }
+
+    .b_circle {
+        position: relative;
+        border: 4px solid;
+        border-color: #0E0D6A;
+        border-radius: 50%;
+        width: 12em;
+        height: 12em;
+        margin-bottom: 2em;
+    }
+
+    .b_circle_text {
+        position: relative;
+        bottom: -3.5em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #0E0D6A;
+    }
+
+    .details {
+        font-size: 1.5em;
+        margin: 6em 0 12.5em 1em;
     }
 
 }
