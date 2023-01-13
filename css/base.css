@@ -8,7 +8,7 @@
     margin: 0;
 }
 
-#logo_on_header {
+.logo_on_header {
     width: 8em;
     margin: 1em;
 }
@@ -26,7 +26,7 @@
  --------------------------------*/
 @media screen and (min-width: 1024px) {
 
-    #logo_on_header {
+    .logo_on_header {
         width: 12em;
         margin-top: 2em;
         margin-bottom: 2.5em;
@@ -221,10 +221,14 @@ video {
     margin-bottom: 2.55em;
     background-color: #F2F0F0;
     padding: 2em 0.5em;
+    display: block;
 }
 
 #ws_title {
     width: 20em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
 }
 
 #ws_words {
@@ -358,7 +362,7 @@ video {
 @media screen and (min-width: 1024px) {
 
     .ws_header {
-        width: 72.5em;
+        width: 100%;
     }
 
     .bar {
@@ -366,7 +370,16 @@ video {
         justify-content: space-between;
         margin-bottom: 5em;
         align-items: center;
-        height: 100%;
+        width: 100%;
+    }
+
+    .work.i {
+        width: 50%;
+    }
+
+    .work_s {
+        width: 50%;
+        margin-left: 2em;
     }
 
     /* .workstyle {
@@ -377,7 +390,7 @@ video {
     } */
 
     #ws_title {
-        width: 30em;
+        width: 80%;
     }
 
     #ws_words {
@@ -398,7 +411,7 @@ video {
     .type_of_works {
         padding: 2em;
         line-height: 3em;
-        margin: 5em 0;
+        margin: 5em 5em;
     }
 
     .type_of_works>h2 {
@@ -412,23 +425,19 @@ video {
     .search {
         font-size: 1.8em;
         margin-bottom: 6em;
-        margin-left: 1em;
+        margin-left: 2.65em;
     }
 
     .humans {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         margin-bottom: 5.5em;
         align-items: center;
         height: 100%;
     }
 
-    .human {
-        margin-right: -15em;
-    }
-
     .human>img {
-        width: 120%;
+        width: 100%;
     }
 
     .human>p {
@@ -440,6 +449,7 @@ video {
 
     .circles {
         display: block;
+        margin-left: 6em;
     }
 
     .o_circle {
@@ -489,7 +499,7 @@ video {
 
     .details {
         font-size: 1.5em;
-        margin: 6em 0 12.5em 1em;
+        margin: 6em 0 12.5em 5em;
     }
 
 }
@@ -499,15 +509,45 @@ video {
 
 /* WORKSPACE */
 
+.space01 {
+    margin: 4em 0 8em 1.25em;
+    position: relative;
+}
+
 #wp01 {
     width: 15em;
     height: auto;
 }
 
 #wp02 {
-    width: 15em;
+    width: 12em;
     height: auto;
     border-radius: 50%;
+    position: absolute;
+    left: 10em;
+    top: 8em;
+}
+
+.operation_title {
+    background-image: url(../img/line2.svg);
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: bottom 10px left -30px;
+}
+
+.operation_description {
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 0 1.2em 0 0.8em;
+}
+
+.operation_description>p {
+    text-align: right;
+    line-height: 2em;
+}
+
+#operation {
+    padding-left: 4.5em;
 }
 
 #operation:before {
@@ -515,6 +555,18 @@ video {
     color: #0E0D6A;
     font-weight: bold;
     font-size: 1.5em;
+}
+
+#wp03 {
+    width: 15em;
+}
+
+#wp04 {
+    width: 15em;
+}
+
+#wp05 {
+    width: 15em;
 }
 
 #relax:before {
@@ -531,11 +583,55 @@ video {
     font-size: 1.5em;
 }
 
+#share_lounge_logo {
+    width: 20em;
+}
+
+#flat_base_logo {
+    width: 20em;
+}
+
 
 /* WORKSPACE END*/
 
 
 /* Quiz */
+
+.quiz {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz>img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 20em;
+    height: 50em;
+    margin: 0 auto;
+}
+
+.quiz_description>p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    flex: 1 0 45%;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 0.4rem;
+    outline: none;
+    background: #dfe4ea;
+    user-select: none;
+    font-weight: 600;
+}
+
 
 /* Quiz END*/
 

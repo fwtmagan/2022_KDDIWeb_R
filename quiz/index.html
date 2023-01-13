@@ -16,8 +16,46 @@
 
 <body>
     <header>
-        <a href="../index.html"><img src="../img/logo_kddi.png" id="logo_on_kv" alt="KDDI ウェブコミュニケーションズ"></a>
+        <a href="../index.html"><img src="../img/logo_kddi.png" class="logo_on_header" alt="KDDI ウェブコミュニケーションズ"></a>
     </header>
+
+    <div class="quiz">
+        <img src="../img/quiz/quiz.png" alt="知るべきKDDIウェブコミュニケーションズのこと">
+    </div>
+
+    <div class="container">
+      <div class="quiz_description">
+        <p>これから５問ほどの問題が出題されます。最も適切なものを選んで答えてください。
+          <br>💡ヒントは、このサイトと会社サイトにあります。
+        </p>
+        <!-- <button id="btnStart">START</button> -->
+  
+        <p id="question"></p>
+  
+        <p id="score"></p>
+  
+        <div class="choices">
+          <button id="guess0" class="btn">
+            <p id="choice0"></p>
+          </button>
+  
+          <button id="guess1" class="btn">
+            <p id="choice1"></p>
+          </button>
+  
+          <button id="guess2" class="btn">
+            <p id="choice2"></p>
+          </button>
+  
+  
+        </div>
+  
+        <p id="progress"></p>
+  
+      </div>
+    </div>
+    
+
 
     <footer>
         <img src="../img/logo_kddi.png" id="logo_footer" alt="KDDI ウェブコミュニケーションズ">
