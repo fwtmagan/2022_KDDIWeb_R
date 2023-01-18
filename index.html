@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <header>
         <div class="keyvisual">
             <video src="img/tokyo.mp4" loop autoplay muted id="video"></video>
@@ -23,7 +24,7 @@
         <p id="phrase02">世界が“当たり前”に使うITサービスを、共につくろう。</p>
         <a href="index.html"><img src="img/logo_kddi.png" id="logo_on_kv" alt="KDDI ウェブコミュニケーションズ"></a>
     </header>
-
+    
     <div class="mainvisual">
         <img src="img/createyourself.png" id="createyourself" alt="自分らしく生きる">
         <img src="img/createyourself_phone.png" id="createyourself_phone" alt="自分らしく生きる">
@@ -40,67 +41,87 @@
     <div class="contents01">
         <img src="img/photos/w_style.jpg" id="w_style" alt="多様な働き方">
         <div class="style_svg"><img src="img/workstyle/style.svg" alt="WORKSTYLE"></div>
-        <div class="arrow"><img src="img/icon/arrow.svg" alt="ARROW"></div>
+        <div class="style_hover01">
+            <span>あなたに「自己実現ができる」多様な働き方</span>
+        <div class="style_button01">
+            <a href="workstyle/index.html"><img src="img/icon/arrow.svg" alt="多様な働き方"></a>
+        </div>
+        </div>
     </div>
 
     <div class="contents02">
         <img src="img/photos/w_space.jpg" id="w_space" alt="見所マップ">
         <div class="space_svg"><img src="img/workspace/space.svg" alt="WORKSPACE"></div>
-        <div class="arrow"><img src="img/icon/arrow.svg" alt="ARROW"></div>
+        <div class="style_hover02">
+            <span>コミュニケーションのため生まれたオフィス紹介</span>
+        <div class="style_button02">
+            <a href="workspace/index.html"><img src="img/icon/arrow.svg" alt="多様な働き方"></a>
+        </div>
+        </div>
     </div>
 
     <div class="contents03">
         <img src="img/photos/quiz.jpg" id="top_quiz" alt="小テスト">
-        <div class="quiz_svg"><img src="img/workstyle/style.svg" alt="TAKE_A_QUIZ"></div>
-        <div class="arrow"><img src="img/icon/arrow.svg" alt="ARROW"></div>
+        <div class="quiz_svg"><img src="img/quiz/quiz.svg" alt="TAKE_A_QUIZ"></div>
+        <div class="style_hover03">
+            <span>知るべきKDDIウェブコミュニケーションズのこと</span>
+        <div class="style_button03">
+            <a href="quiz/index.html"><img src="img/icon/arrow.svg" alt="多様な働き方"></a>
+        </div>
+        </div>
     </div>
 
     <div class="moreabout">
         <img src="img/photos/middle01.jpg" id="middle01" alt="middle01">
         <img src="img/photos/middle02.jpg" id="middle02" alt="middle02">
-        <img src="img/moreabout.svg" alt="ITで明日のビジネスにある当たり前をつくる">
+        <div class="middle_zone">
+            <img src="img/moreabout.svg" alt="ITで明日のビジネスにある当たり前をつくる">
         <p>“ITで明日のビジネスにある当たり前をつくる”</p>
-        <a href="https://www.kddi-webcommunications.co.jp/" target="_blank">
-            <button id="viewmore_1">View More</button></a>
+        <div class="viewmore_button_1"><a target="_blank" id="viewmore_1" href="https://www.kddi-webcommunications.co.jp/">View More</a></div>
+    </div>
         <img src="img/photos/middle03.jpg" id="middle03" alt="middle03">
         <img src="img/photos/middle04.jpg" id="middle04" alt="middle04">
     </div>
 
     <div class="services">
-        <img src="img/title/services.svg" alt="サービス">
+       <div class="services_svg"><img src="img/title/services.svg" alt="サービス"></div>
         <div class="services_box">
+            <div class="cpi">
             <img src="img/services/logo_cpi.svg" alt="CPI">
             <p>レンタルサーバー <br>「CPI」</p>
+        </div>
+        <div class="jimdo">
             <img src="img/services/logo_jimdo.svg" alt="ジンドゥー">
             <p>ホームページ作成サービス <br>「ジンドゥー」</p>
+        </div>
+        <div class="twilio">
             <img src="img/services/logo_twilio.svg" alt="Twilio">
             <p>クラウド電話APIサービス <br>「Twilio」</p>
+        </div>
+        <div class="telchan">
             <img src="img/services/logo_telchan.svg" alt="てるちゃん">
             <p>農業IoTサービス <br>「てるちゃん」</p>
         </div>
-        <a href="https://www.kddi-webcommunications.co.jp/service/" target="_blank">
-            <button id="viewmore_2">View More</button></a>
+        </div>
+        <div class="viewmore_button_2"><a target="_blank" id="viewmore_2" href="https://www.kddi-webcommunications.co.jp/">View More</a></div>
     </div>
 
     <div class="access">
         <div class="square_1">
-            <p>東京本社
-            <p></p>
+            <p>東京本社<br>
             〒107- 0062<br>
             東京都港区南青山2-26-1<br>
             D-LIFEPLACE南青山10階</p>
         </div>
 
         <div class="square_2">
-            <p>沖縄オフィス
-            <p></p>
+            <p>沖縄オフィス<br>
             〒904-1106<br>
             沖縄県うるま市石川2313-3</p>
         </div>
 
         <div class="square_3">
-            <p>宮古島オフィス
-            <p></p>
+            <p>宮古島オフィス<br>
             〒906-0304<br>
             沖縄県宮古島市<br>
             下地字上地472番地39<br>
@@ -110,10 +131,9 @@
 
     <footer>
         <a href="index.html"><img src="img/logo_kddi.png" id="logo_footer" alt="KDDI ウェブコミュニケーションズ"></a>
-        <p><small>Copyright © 2022 KDDI Web Communications inc. All Rights Reserved.</small></p>
+        <p><small>Copyright © 2023 KDDI Web Communications inc. All Rights Reserved.</small></p>
+        <a href="index.html"><img src="img/btt.svg" id="back_to_top" alt="Back To Top"></a>
     </footer>
-
-    <a href="index.html"><img src="img/btt.svg" id="back_to_top" alt="Back To Top"></a>
     
 </body>
 
