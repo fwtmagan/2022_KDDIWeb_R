@@ -585,6 +585,11 @@ video {
 @media screen and (min-width: 1024px) {
   /* Keyvisual Video */
 
+  .keyvisual {
+    display: grid;
+    place-items: center;
+  }
+
   video {
     height: auto;
     width: 100%;
@@ -596,21 +601,21 @@ video {
   #phrase01 {
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    top: 12em;
-    left: 15em;
+    top: 32%;
+    left: 20%;
   }
 
   #phrase02 {
     font-size: 1.5em;
     letter-spacing: 0.1em;
-    top: 14em;
-    left: 32em;
+    top: 38%;
+    left: 45%;
   }
 
   #logo_on_kv {
     width: 13em;
-    top: 25em;
-    left: 48em;
+    top: 45%;
+    left: 45%;
   }
 
   /* Keyvisual Video END */
@@ -1372,6 +1377,18 @@ video {
   width: 20em;
 }
 
+#flat_base,
+#share_lounge {
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
 /*-------------------------------
  ▼大型画面向けデザイン（PCなど）
  --------------------------------*/
@@ -1523,6 +1540,7 @@ video {
     font-size: 1.15em;
     font-weight: bolder;
     transition: background-color 0.5s;
+    color: #000000;
   }
 
   #flat_base:hover,
