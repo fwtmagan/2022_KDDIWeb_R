@@ -767,8 +767,8 @@ video {
   #top_quiz {
     width: 35%;
     position: relative;
-    left: 5em;
-    top: 5em;
+    left: 8%;
+    top: 3em;
   }
 
   .quiz_svg {
