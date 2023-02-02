@@ -271,12 +271,10 @@ video {
 }
 
 .style_svg {
-  width: 70%;
-}
-
-.style_svg > img {
+  width: 50%;
   position: relative;
-  left: 7em;
+  left: 15%;
+  top: 0.8em;
 }
 
 .style_button01 {
@@ -298,11 +296,10 @@ video {
 }
 
 .space_svg {
-  width: 70%;
-}
-
-.space_svg > img {
-  margin-left: 1.5em;
+  width: 50%;
+  position: relative;
+  right: 20%;
+  top: 0.8em;
 }
 
 .style_hover02 {
@@ -341,7 +338,10 @@ video {
 }
 
 .quiz_svg {
-  width: 70%;
+  width: 50%;
+  position: relative;
+  left: 8%;
+  top: 0.8em;
 }
 
 .quiz_svg > img {
@@ -382,14 +382,27 @@ video {
 }
 
 .middle_zone {
+  width: 80%;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  margin: 2em auto;
+  margin: 1.5em auto 1em auto;
+}
+
+.middle_words {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* KDDIWeb View More Button */
 
 .viewmore_button_1 {
-  margin: 3em auto;
+  margin: 2em auto 3em auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #viewmore_1 {
@@ -446,8 +459,9 @@ video {
   background-color: #ecf6fd;
 }
 
-#services_svg {
+.services_svg {
   width: 70%;
+  margin-bottom: 1em;
 }
 
 .services_box {
@@ -520,6 +534,12 @@ video {
   background-repeat: no-repeat;
   background-size: 150%;
   background-position: bottom 200px left -30px;
+}
+
+.access_svg {
+  width: 35%;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .square_1 {
@@ -661,12 +681,9 @@ video {
 
   .style_svg {
     width: 45%;
-  }
-
-  .style_svg > img {
     position: relative;
     top: -12em;
-    left: 100%;
+    left: 50%;
   }
 
   .style_hover01 {
@@ -709,13 +726,9 @@ video {
 
   .space_svg {
     width: 40%;
-  }
-
-  .space_svg > img {
     position: relative;
-    top: -15em;
-    left: 20%;
-    margin-bottom: 0.5em;
+    top: -16.5em;
+    right: 50%;
   }
 
   .style_hover02 {
@@ -760,12 +773,9 @@ video {
 
   .quiz_svg {
     width: 45%;
-  }
-
-  .quiz_svg > img {
     position: relative;
-    top: -12em;
-    left: 100%;
+    top: -13em;
+    left: 50%;
   }
 
   .style_hover03 {
@@ -777,14 +787,14 @@ video {
     font-size: 1.2em;
     position: relative;
     top: 3em;
-    left: 10em;
+    left: 20%;
   }
 
   .style_button03 {
     width: 4.5%;
     position: relative;
     top: 3.3em;
-    left: 16%;
+    left: 20%;
     transition-property: width;
     transition-duration: 1s;
     transition-timing-function: ease-out;
@@ -811,11 +821,15 @@ video {
     top: 3em;
   }
 
+  .middle {
+    margin: 4em 0;
+  }
+
   .middle_zone {
     width: 60%;
   }
 
-  .middle_zone > p {
+  .middle_words {
     font-size: 1.5em;
   }
 
@@ -914,7 +928,14 @@ video {
     justify-content: space-around;
     background-size: 100%;
     background-position: bottom 100px left 50px;
-    margin: 12em auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .access_svg {
+    width: 15%;
+    margin-top: 4em;
+    margin-left: 1.5em;
   }
 
   .square_1 {
@@ -942,9 +963,9 @@ video {
   }
 
   #back_to_top {
-    height: 30em;
+    height: 20em;
     position: absolute;
-    bottom: 1em;
+    bottom: 5.5em;
     left: 1em;
   }
 }
@@ -1417,8 +1438,8 @@ a:hover {
     width: 25%;
     height: auto;
     position: absolute;
-    left: 35em;
-    top: 20em;
+    left: 35%;
+    top: 15em;
   }
 
   .operation_title {
