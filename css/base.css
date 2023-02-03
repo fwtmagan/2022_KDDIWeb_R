@@ -220,16 +220,41 @@ video {
 /* Keyvisual Video END */
 
 .mainvisual {
+  background-image: url(../img/line2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: 3em;
   position: relative;
 }
 
-#createyourself {
-  display: none;
+#creat {
+  font-size: 2.8em;
+  font-family: DIN Alternate, serif;
+  color: #da5555;
+  text-indent: 0.2em;
+  letter-spacing: 0.08em;
 }
 
-#createyourself_phone {
-  margin-top: 3em;
-  width: 100%;
+#yourself {
+  font-size: 2.8em;
+  font-family: DIN Alternate, serif;
+  color: #0e0d6a;
+  text-indent: 0.25em;
+  letter-spacing: 0.25em;
+}
+
+#jp {
+  font-size: 0.8em;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.1em;
+  position: relative;
+  left: 50%;
+  top: 3em;
 }
 
 .introduction {
@@ -391,6 +416,7 @@ video {
 
 .middle_words {
   font-size: 1em;
+  font-family: "Noto Sans JP", sans-serif;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -627,6 +653,7 @@ video {
 
   #phrase02 {
     font-size: 1.2em;
+    font-family: "Noto Sans JP", sans-serif;
     letter-spacing: 0.1em;
     top: 38%;
     left: 45%;
@@ -641,12 +668,29 @@ video {
   /* Keyvisual Video END */
 
   .mainvisual {
-    width: 100%;
-    text-align: left;
     margin-top: 8em;
   }
 
-  #createyourself {
+  #creat {
+    font-size: 6em;
+    text-indent: 0.8em;
+    letter-spacing: 0.08em;
+  }
+
+  #yourself {
+    font-size: 6em;
+    text-indent: 0.9em;
+    letter-spacing: 0.25em;
+  }
+
+  #jp {
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    left: 37%;
+    top: 3em;
+  }
+
+  /* #createyourself {
     display: block;
     margin-top: 2em;
     width: 100%;
@@ -654,10 +698,10 @@ video {
 
   #createyourself_phone {
     display: none;
-  }
+  } */
 
   .introduction {
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: right;
     line-height: 2.5em;
     position: relative;
@@ -868,7 +912,8 @@ video {
   }
 
   .services_svg {
-    width: 30%;
+    width: 25%;
+    margin-left: 1.2em;
     margin-bottom: 4em;
   }
 

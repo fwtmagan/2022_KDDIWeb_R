@@ -221,8 +221,18 @@ function showResult() {
     let scoreTag =
       '<img src="../img/quiz/4_correct.png"><span><p>早速「新卒採用情報」をチェックしましょう！</p></span><a href="https://recruit.kddi-webcommunications.co.jp/recruitment/fresh/" target="_blank"><button class="recruit">応募サイトへ</button>';
     scoreText.innerHTML = scoreTag;
-  } else if (userScore <= 3) {
+  } else if (userScore == 3) {
     // if user scored is equal or under 3
+    let scoreTag =
+      '<img src="../img/quiz/321.png"><span><p>惜しい！もう少し見直してみましょう。</p></span>';
+    scoreText.innerHTML = scoreTag;
+  } else if (userScore == 2) {
+    // if user scored is equal or under 2
+    let scoreTag =
+      '<img src="../img/quiz/321.png"><span><p>惜しい！もう少し見直してみましょう。</p></span>';
+    scoreText.innerHTML = scoreTag;
+  } else if (userScore == 1) {
+    // if user scored is equal or under 1
     let scoreTag =
       '<img src="../img/quiz/321.png"><span><p>惜しい！もう少し見直してみましょう。</p></span>';
     scoreText.innerHTML = scoreTag;
